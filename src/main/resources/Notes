@@ -1,3 +1,57 @@
 
 1. F:\Java_Techie_code\Springboot_Java_Techie\Java_Techie_Video_springboot\kubernate_video\code\Correct-Modifiedcode\Kubernetes-demo>docker build -t kubernetes-demo:1.0 .
 2. docker images
+
+
+kubectl get pods
+kubectl get deployments
+kubectl get services
+kubectl get pv
+kubectl get pvc
+kubectl describe pod <pod-name>
+kubectl logs <pod-name>
+kubectl exec -it <pod-name> -- bash
+kubectl apply -f deployment.yaml
+kubectl delete -f deployment.yaml
+minikube start --help
+minikube version
+kubectl cluster -info
+kubectl get nodes
+minikube logs --problems
+minikube profile list
+
+To deployee the application
+
+
+if any issue is coming to start the minikube then use below steps
+minikube delete
+minikube start --driver=docker (this is like vertual box)
+
+
+
+
+install kubectl:
+
+kubectl create deployment kubernetes-demo --image=kubernetes-demo:1.0 --port=8080
+kubectl get deployment
+kubectl describe deployment kubernetes-demo
+kubeectl get pods
+kubectl delete service kubernetes-demo
+
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
+install Minikube :
+https://v1-18.docs.kubernetes.io/docs...
+
+install Docker Desktop : https://docs.docker.com/desktop/setup/install/windows-install/
+
+Download VirtualBox :
+https://www.virtualbox.org/wiki/Downloads
+
+
+
+
+ @FOR /f "tokens=*" %i IN ('minikube -p minikube docker-env --shell cmd') DO @%i
+
+ https://hub.docker.com/_/openjdk
