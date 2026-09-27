@@ -1,43 +1,36 @@
 
 1. F:\Java_Techie_code\Springboot_Java_Techie\Java_Techie_Video_springboot\kubernate_video\code\Correct-Modifiedcode\Kubernetes-demo>docker build -t kubernetes-demo:1.0 .
 2. docker images
-
-
-kubectl get pods
-kubectl get deployments
-kubectl get services
-kubectl get pv
-kubectl get pvc
-kubectl describe pod <pod-name>
-kubectl logs <pod-name>
-kubectl exec -it <pod-name> -- bash
-kubectl apply -f deployment.yaml
-kubectl delete -f deployment.yaml
-minikube start --help
-minikube version
-kubectl cluster -info
-kubectl get nodes
-minikube logs --problems
-minikube profile list
-
+3.kubectl get pods
+4.kubectl get deployments
+5.kubectl get services
+6.kubectl get pv
+7.kubectl get pvc
+8.kubectl describe pod <pod-name>
+9.kubectl logs <pod-name>
+10.kubectl exec -it <pod-name> -- bash
+11.kubectl apply -f deployment.yaml
+12.kubectl delete -f deployment.yaml
+13.minikube start --help
+14.minikube version
+15.kubectl cluster -info
+16.kubectl get nodes
+17.minikube logs --problems
+18.minikube profile list
+-------------------------------------------------------------------
 To deployee the application
-
-
 if any issue is coming to start the minikube then use below steps
+------------------------------------------------------------------
 minikube delete
 minikube start --driver=docker (this is like vertual box)
-
-
-
-
+------------------------------------------------------------------
 install kubectl:
-
-kubectl create deployment kubernetes-demo --image=kubernetes-demo:1.0 --port=8080
-kubectl get deployment
-kubectl describe deployment kubernetes-demo
-kubeectl get pods
-kubectl delete service kubernetes-demo
-
+------------------
+1.kubectl create deployment kubernetes-demo --image=kubernetes-demo:1.0 --port=8080
+2.kubectl get deployment
+3.kubectl describe deployment kubernetes-demo
+4.kubectl get pods
+5.kubectl delete service kubernetes-demo
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 
@@ -45,12 +38,9 @@ install Minikube :
 https://v1-18.docs.kubernetes.io/docs...
 
 install Docker Desktop : https://docs.docker.com/desktop/setup/install/windows-install/
-
+======================================================
 Download VirtualBox :
 https://www.virtualbox.org/wiki/Downloads
-
-
-
 
  @FOR /f "tokens=*" %i IN ('minikube -p minikube docker-env --shell cmd') DO @%i
 
